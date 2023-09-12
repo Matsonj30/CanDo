@@ -509,6 +509,61 @@ body {
     font-size: 18px;
   }
 }
+.whySection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.whySection .whySectionContent {
+  display: flex;
+  flex-direction: column;
+}
+.whySection .whySectionContent .whyReason {
+  display: flex;
+  flex-direction: column;
+}
+.whySection .whySectionContent .whyReason .whyReasonImage {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px; /* Centers the image within the div */
+}
+.whySection .whySectionContent .whyReason .image1 {
+  background-image: url("../../images/calculator.png");
+}
+.whySection .whySectionContent .whyReason .image2 {
+  background-image: url("../../images/spareChange.png");
+}
+.whySection .whySectionContent .whyReason .image3 {
+  background-image: url("../../images/clock.png");
+}
+.whySection .whySectionContent .whyReason .whyReasonText {
+  background-color: #8B5974;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+.whySection .whySectionContent .whyReason .whyReasonText b {
+  font-family: "semibold";
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.whySection .whySectionContent .whyReason .whyReasonText p {
+  text-align: center;
+  margin: 0px 5px;
+  max-width: 500px;
+}
+.whySection .whySectionContent .whyReason:nth-child(2) .whyReasonText {
+  background-color: #301E2E;
+}
+.whySection .whySectionContent .whyReason:nth-child(3) .whyReasonText {
+  background-color: #AD6D90;
+}
+
 .aboutSection {
   width: 100%;
   display: flex;
@@ -516,6 +571,7 @@ body {
   align-items: center;
   background-image: url("../../images/aboutBackground.png");
   margin-top: 100px;
+  background-size: cover;
 }
 .aboutSection .titleSection {
   margin-top: 0px;
@@ -536,6 +592,7 @@ body {
   text-align: center;
   color: #FAFAFA;
   max-width: 900px;
+  padding: 0px 5px;
 }
 .aboutSection button {
   margin-bottom: 50px;

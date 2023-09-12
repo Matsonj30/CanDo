@@ -5,8 +5,10 @@
     align-items: center;
     background-image: url("../../images/aboutBackground.png");
     margin-top: 100px;
+    background-size: cover;
     .titleSection{
         margin-top: 0px;
+        
         b{
             color: $secondaryColor;
         }
@@ -32,6 +34,7 @@
             text-align: center;
             color: $white;
             max-width: 900px;
+            padding: 0px 5px;
         }
 
     

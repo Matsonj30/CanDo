@@ -1,0 +1,73 @@
+.whySection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+    .whySectionContent{
+        display: flex;
+        flex-direction: column;
+
+
+        .whyReason{
+            display: flex;
+            flex-direction: column;
+
+            .whyReasonImage{
+              
+                width: 100%;
+                height: 300px;
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center 0px; /* Centers the image within the div */
+           
+            }
+            .image1{
+                background-image: url("../../images/calculator.png");
+            }
+            .image2{
+                background-image: url("../../images/spareChange.png");
+            }
+            .image3{
+                background-image: url("../../images/clock.png");
+            }
+        
+            
+            .whyReasonText{
+                background-color: $primaryColor;
+                color: $white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 0px;
+                b{
+                    font-family: "semibold";
+                    font-size: 30px;
+                    margin: 10px 0px;
+                
+                }
+                p{
+                    text-align: center;
+                    margin: 0px 5px;
+                    max-width: 500px;
+                }
+            }
+            
+        }
+    }
+    .whySectionContent{
+        .whyReason:nth-child(2){
+            .whyReasonText{
+                background-color: $accentColorDark;
+            }
+        }
+        .whyReason:nth-child(3){
+            .whyReasonText{
+                background-color: $pink;
+            }
+        }
+    }
+
+
+}
