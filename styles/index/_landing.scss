@@ -1,0 +1,108 @@
+.landing{
+    position: relative;
+    z-index: 1;
+    background-image: url("../../images/heroImage.png");
+    height: fit-content;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 8px solid $secondaryColor;
+    .textContent{
+        border: 2px solid $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px;
+        margin-top: 100px;
+        min-height: 420px;
+        max-width: 1250px;
+        color: $white;
+        margin-bottom: 50px;
+        .title{
+            font-size: 18px;
+            padding: 10px 0px;
+            text-align: center;
+            font-family: "semibold";
+            transform: translateY(10px);
+        
+            
+        }
+        .slogan{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 55px;
+            b{
+                font-size: 50px;
+                text-align: center;
+                
+            }
+            
+        }
+      
+
+        
+        .line{
+            display: inline-block;
+            width: 90%;
+            height: 2px;
+            background-color: $secondaryColor;
+            margin: 15px 0px;
+            margin-top: 25px;
+        }
+        .supportingDetails{
+    
+            text-align: center;
+            padding: 10px 5px;
+            max-width: 600px;
+
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            button{
+                font-size: 20px;
+                margin: 10px 10px;
+            }
+        }
+    
+    }
+}
+
+@media(min-width:850px){
+    .landing{
+        .textContent{
+            margin-top: 150px;
+            .title{
+                font-size: 22px;
+                transform: translateY(15px);
+            }
+            .slogan{
+                line-height: 100px;
+                b{
+                    font-size: 90px;
+                }
+                #changingWord{
+                    
+                    padding-bottom: 20px;
+                }
+
+            }
+            .supportingDetails{
+                font-size: 18px;
+            }
+
+
+
+        }
+    }
+
+
+
+}

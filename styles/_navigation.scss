@@ -1,0 +1,238 @@
+.navigationBar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    position: absolute;
+    z-index: 2;
+    
+        img{
+            transform: translateY(10px);
+            padding-left: 30px;
+            width: 106px;
+            height: auto;
+   
+        }
+        a, p{
+            text-decoration: none;
+            cursor: pointer;
+            button{
+                display: none;
+                font-size: 20px;
+                font-family: "semibold";
+                
+            }
+        }
+
+        .navSocials{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+            p{
+                font-size: 20px;
+                letter-spacing: 2px;
+                color: $white;
+                font-family: "semibold";
+            }
+            .fa{
+                margin-top: 15px;
+                font-size: 28px;
+                color: $white;
+            }
+        }
+   
+        #menu{
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            overflow: visible;
+            transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+            transform: translateX(100%);
+            background-color: $primaryColor;
+            img{
+                
+                padding-left: 0px;
+            }
+            ul{
+                padding-top: 50px;
+                list-style: none;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    padding: 20px 0px;
+                    text-align: center;
+                    width: 90%;
+                    border-bottom: 2px solid rgba(255,255,255,.25);
+                    margin-right: unset;
+                    .fa{
+                        display: none
+                    }
+                    
+                    a, p{
+                        font-family: "semibold";
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: $white;
+                        letter-spacing: 2px;
+                        
+               
+                    }
+                    a:hover{
+
+                    }
+                }
+            }
+        }
+        a, p{
+            button{
+                .fa{
+                    transform: translateY(4px);
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .hamburgerMenu{
+        position: absolute;
+        z-index: 7;
+        top: 40px;
+        right: 30px;
+        
+
+        input{
+            opacity: 50%;
+            width: 70px;
+            height: 60px;
+            opacity: 0%;
+            position: absolute;
+            top: -20px;
+            left: -15px;
+            z-index: 2;
+        }
+        span{
+            display: block;
+            width: 40px;
+            height: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: $secondaryColor;
+            transition: 0.3s ease-in;
+            z-index: -2;
+        
+        }
+        span:nth-child(2){
+            transform-origin: 0% 0%;
+        }
+        span:last-child{
+            transform-origin: 0% 100%;
+                
+        }
+        input:checked ~ span{
+            transform: rotate(45deg) translate(0px, 0px);
+           
+        }
+    
+        input:checked ~ span:nth-child(3){
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        input:checked ~ span:nth-child(4){
+            transform: rotate(-45deg) translate(-5px, 4px);
+        }
+    }
+
+
+@media(min-width: 1000px){
+    .navigationBar{
+        z-index: 2;
+        justify-content: space-around;
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        background-color: transparent;
+        img{
+            width: 150px;
+
+        }
+        a, p{
+            button{
+                display: unset;
+            }
+        }
+        .navSocials{
+            display: none;
+        }
+        #menu{
+            background-color: transparent;
+            transform: unset !important;
+            position: relative;
+            width: fit-content;
+            align-items: center;
+            height: fit-content;
+            background: unset;
+            img{
+                display: none;
+            }
+            .socials{
+                display: none;
+            }
+            ul{
+                padding-top: 0px;
+                text-align: center;
+                width: fit-content;
+                flex-direction: row;
+                
+                li{
+                    text-align: center;
+                    width: fit-content;
+                    white-space: nowrap;
+                    padding: 0px 20px;
+                    padding-bottom: 0px;
+                    border: none;
+                    a, p{
+                        font-size: 20px;
+                        color: $white;
+                        letter-spacing: 1px;
+                        width: fit-content;
+                        display: inline-block;
+                        
+                    }
+                    :after{
+                        display: block;
+                        content: "";
+                        border-bottom: 3px solid $secondaryColor;
+                        transform: scaleX(0);
+                        transition: 250ms ease-in-out;
+                        
+                    }
+                    :hover::after{
+                        transform: scaleX(1);
+                        transform-origin: 50% 100%;
+                        
+                    }
+           
+                    
+                }
+                
+            }
+        }   
+    
+    }
+        .hamburgerMenu{
+            display: none;
+        }   
+    }
+    
+   
+

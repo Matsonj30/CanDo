@@ -1,17 +1,20 @@
 //-------------------------------COLORS---------------------------------
-$primaryColor: #1C2336;
-$primaryDark:  #fafafa;
-$primaryLight: #FAFAFA;
+$primaryColor: #8B5974;
+$primaryDark:  #884B6A;
+$primaryLight: #AD6D90;
 
-$secondaryColor: #1DA7E2;
+$secondaryColor: #F6DCBB;
 $secondaryColorDark: #1e86b3;
 $secondaryColorLight: #1ebbff;
 
-$accentColor: #644CA8;
-$accentColorDark: #e6242b;
-$accentColorLight: #77623b;;
+$accentColor: #692D50;
+$accentColorDark: #301E2E;
+$accentColorLight: #692D50;
 
+
+$pink: #AD6D90;
 $white:  #FAFAFA;
+$gray: #626262;
 $black: #111111;
 //-------------------------------COLORS---------------------------------
 
@@ -21,12 +24,19 @@ $black: #111111;
   font-family: "Poppins";
   font-style: normal;
   src: url(../fonts/Poppins/Poppins-Regular.ttf);
-
+  font-display: swap;
 }
 @font-face{
   font-family: "bold";
   font-style: normal;
   src: url(../fonts/Poppins/Poppins-Bold.ttf);
+  font-display: swap;
+}
+@font-face{
+  font-family: "semibold";
+  font-style: normal;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+  font-display: swap;
 }
 
 //-------------------------------FONTS---------------------------------
@@ -36,19 +46,84 @@ $black: #111111;
   margin: 0;   
   padding: 0;
   font-family: "Poppins";
+
+  a{
+    text-decoration: none;
+  }
 }
 .wrapper{
   display: flex;
   justify-content:  center;
 }
+.primaryButton{
+   background-color: $accentColor;
+   border: none;
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   padding: 10px 15px;
+   color: $white;
+   font-family: "semibold";
+  font-size: 16px;
+   cursor: pointer;
+   transition: 0.5s;
+   img{
+     margin-left: 10px;
+     width: 32px !important;
+     height: 32px !important;
+   }
+}
+.primaryButton:hover{
+  background-color: #50223d
+}
 
+
+.titleSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+    b{
+      color: $primaryColor;
+      font-family: "semibold";
+      font-size: 20px;
+      transform: translateY(5px);
+    }
+    p{
+      font-size: 40px;
+      font-family: "bold";
+    }
+    .circles{
+      display: flex;
+      align-items: center;
+      margin: 5px;
+      span{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0px 3px;
+        background-color: $primaryColor;
+      }
+      .biggerCircle{
+        width: 13px;
+        height: 13px;
+       background-color: $primaryDark;
+      }
+    }
+}
 
 //-------------------------------MULTI PURPOSE CSS---------------------------------
 
 
 //-------------------------------IMPORTS---------------------------------
-@import "";
+@import "_navigation.scss";
 
-
-
+@import "index/_landing.scss";
+@import "index/_servicesSection.scss";
 //-------------------------------IMPORTS---------------------------------
