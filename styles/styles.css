@@ -25,6 +25,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #FAFAFA;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -93,6 +97,48 @@
   background-color: #884B6A;
 }
 
+.additionalQuestion {
+  display: none !important;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  transform: translateY(-53px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.856);
+}
+.additionalQuestion .topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px 20px;
+}
+.additionalQuestion .topSection .additionalQuestionTitle :nth-child(2) {
+  color: #8B5974;
+}
+.additionalQuestion .topSection a button {
+  padding: 5px 15px;
+  padding-right: 5px;
+  margin-bottom: 0px !important;
+}
+.additionalQuestion .topSection b {
+  font-size: 40px;
+  font-family: "bold";
+}
+.additionalQuestion .bottomSection {
+  display: flex;
+  margin: 0px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.additionalQuestion .bottomSection p {
+  font-size: 18px;
+}
+
+@media (min-width: 550px) {
+  .additionalQuestion {
+    display: block !important;
+  }
+}
 .navigationBar {
   height: 100px;
   width: 100%;
@@ -460,6 +506,43 @@
     margin: unset;
     margin-top: 10px;
     margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+.aboutSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../images/aboutBackground.png");
+  margin-top: 100px;
+}
+.aboutSection .titleSection {
+  margin-top: 0px;
+}
+.aboutSection .titleSection b {
+  color: #F6DCBB;
+}
+.aboutSection .titleSection p {
+  color: #FAFAFA;
+}
+.aboutSection .titleSection .circles span {
+  background-color: #F6DCBB;
+}
+.aboutSection .titleSection .circles .biggerCircle {
+  background-color: #FAFAFA;
+}
+.aboutSection .aboutSectionContent p {
+  text-align: center;
+  color: #FAFAFA;
+  max-width: 900px;
+}
+.aboutSection button {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1000px) {
+  .aboutSection .aboutSectionContent p {
     font-size: 18px;
   }
 }/*# sourceMappingURL=styles.css.map */
