@@ -58,11 +58,13 @@
             transform: translateX(100%);
             background-color: $primaryColor;
             img{
-                
+                height: 200px;
+                width: auto;
                 padding-left: 0px;
+             
             }
             ul{
-                padding-top: 50px;
+                padding-top: 0px;
                 list-style: none;
                 text-align: center;
                 width: 100%;

@@ -196,10 +196,12 @@ body {
   background-color: #8B5974;
 }
 .navigationBar #menu img {
+  height: 200px;
+  width: auto;
   padding-left: 0px;
 }
 .navigationBar #menu ul {
-  padding-top: 50px;
+  padding-top: 0px;
   list-style: none;
   text-align: center;
   width: 100%;
@@ -531,7 +533,7 @@ body {
   background-position: center 0px; /* Centers the image within the div */
 }
 .whySection .whySectionContent .whyReason .image1 {
-  background-image: url("../../images/calculator.png");
+  background-image: url("../../images/clock.png");
 }
 .whySection .whySectionContent .whyReason .image2 {
   background-image: url("../../images/spareChange.png");
@@ -564,6 +566,28 @@ body {
   background-color: #AD6D90;
 }
 
+@media (min-width: 800px) {
+  .whySection .whySectionContent .whyReason {
+    flex-direction: unset;
+  }
+  .whySection .whySectionContent .whyReason .whyReasonImage {
+    height: auto;
+  }
+  .whySection .whySectionContent .whyReason .image2 {
+    order: 2;
+  }
+  .whySection .whySectionContent .whyReason .whyReasonText {
+    width: 700px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+  .whySection .whySectionContent .whyReason .whyReasonText p {
+    max-width: 500px;
+    line-height: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
 .aboutSection {
   width: 100%;
   display: flex;
