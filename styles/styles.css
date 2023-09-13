@@ -209,6 +209,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.navigationBar #menu ul li:first-child {
+  padding-top: 0px;
+}
 .navigationBar #menu ul li {
   padding: 20px 0px;
   text-align: center;

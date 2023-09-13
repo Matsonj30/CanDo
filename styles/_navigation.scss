@@ -71,6 +71,9 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                li:first-child{
+                    padding-top: 0px;
+                }
                 li{
                     padding: 20px 0px;
                     text-align: center;
