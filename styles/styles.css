@@ -210,7 +210,7 @@ body {
   align-items: center;
 }
 .navigationBar #menu ul li:first-child {
-  padding-top: 0px;
+  padding: 0px 0px;
 }
 .navigationBar #menu ul li {
   padding: 20px 0px;
