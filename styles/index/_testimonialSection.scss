@@ -1,0 +1,103 @@
+.testimonialSection{
+    background-color: $primaryDark;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0px;
+    .testimonial{
+        position:relative;
+        max-width: 350px;
+        height: fit-content;
+        background-color: $primaryDark;
+        box-shadow: 0px 0px 13px 0px #00000067;
+        padding: 40px 40px;
+        margin: 10px 0px;
+        text-align: center;
+     
+
+        .testimonialText{
+            border: 1px solid $secondaryColor;
+            padding: 25px 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p{
+            color: $white;
+            margin-bottom: 10px;
+        }
+        b{
+            font-family: "semibold";
+            color: $white;
+        }
+
+
+
+        .topLeftQuote{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .topRightQuote{
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        .fa{
+            color: $secondaryColor;
+            font-size: 40px;
+            background-color: $primaryDark;
+            padding: 7px 10px;
+        }
+       
+        .top{
+            right: 28px;
+            top: 20px;
+        }
+        .bottom{
+            left: 28px;
+            bottom: 20px;
+        }
+        .boxes{
+            background-color: $primaryDark;
+            position: absolute;
+           
+            padding: 10px 10px;
+            display: flex;
+        }
+        .box{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: $secondaryColor;
+            margin: 0px 2px;
+            
+        }
+        .doubleBox::after{
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: $secondaryColor;
+            bottom: 0;
+            left: 25px;
+        }
+        
+    }
+
+}
+
+@media(min-width:500px){
+    .testimonialSection{
+        .testimonial{
+            margin: 10px 30px;
+
+
+        }
+
+
+    }
+
+
+}

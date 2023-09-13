@@ -19,12 +19,13 @@
                 height: 300px;
                 background-attachment: fixed;
                 background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center 0px; /* Centers the image within the div */
+             
+                background-position: center /* Centers the image within the div */
            
             }
+        
             .image1{
-                background-image: url("../../images/clock.png");
+                background-image: url("../../images/smallClock.png");
             }
             .image2{
                 background-image: url("../../images/spareChange.png");
