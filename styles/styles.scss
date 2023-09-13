@@ -121,6 +121,28 @@ body{
       }
     }
 }
+.secondaryTitleSection{
+  @extend .titleSection;
+  margin-top: 0px;
+  
+  b{
+      color: $secondaryColor;
+  }
+  p{
+      color: $white;
+  }
+  .circles{
+
+      span{
+  
+        background-color: $secondaryColor;
+      }
+      .biggerCircle{
+  
+       background-color: $white;
+      }
+    }
+}
 
 
 .additionalQuestion{

@@ -6,28 +6,7 @@
     background-image: url("../../images/aboutBackground.png");
     margin-top: 100px;
     background-size: cover;
-    .titleSection{
-        margin-top: 0px;
-        
-        b{
-            color: $secondaryColor;
-        }
-        p{
-            color: $white;
-        }
-        .circles{
     
-            span{
-        
-              background-color: $secondaryColor;
-            }
-            .biggerCircle{
-        
-             background-color: $white;
-            }
-          }
-    }
-
 
     .aboutSectionContent{
         p{

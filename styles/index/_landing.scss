@@ -10,8 +10,10 @@
     width: 100%;
     box-sizing: border-box;
     border: 8px solid $secondaryColor;
+   
     .textContent{
-        border: 2px solid $secondaryColor;
+      //  border: 2px solid $secondaryColor;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,6 +23,61 @@
         max-width: 1250px;
         color: $white;
         margin-bottom: 50px;
+        .landingGraphics{
+            .leftBorder{
+                position: absolute;
+                left: 0px;
+                height: 94%;
+                width: 2px;
+                top: 3%;
+                background-color: $secondaryColor;
+            }
+            .rightBorder{
+                @extend .leftBorder;
+                right: 0px;
+                left: unset;
+            }
+            .topBorder{
+                position: absolute;
+                top: 0px;
+                left: 1%;
+                width: 98%;
+                height: 2px;
+                background-color: $secondaryColor;
+            }
+            .bottomBorder{
+                @extend .topBorder;
+                bottom:0px;
+                top: unset;
+                
+            }
+            .triangle{
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                border-top: 2px solid $secondaryColor;
+                border-left:  2px solid $secondaryColor;
+            }
+            .topLeft{
+                top: -10px;
+                left: -10px;
+            }
+            .topRight{
+                transform: rotate(90deg);
+                top: -10px;
+                right: -10px;
+            }
+            .bottomLeft{
+                transform: rotate(270deg);
+                bottom: -10px;
+                left: -10px;
+            }
+            .bottomRight{
+                transform: rotate(180deg);
+                bottom: -10px;
+                right: -10px;
+            }
+        }
         .title{
             font-size: 18px;
             padding: 10px 0px;

@@ -59,7 +59,7 @@ body {
   background-color: #50223d;
 }
 
-.titleSection {
+.titleSection, .secondaryTitleSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,22 +68,22 @@ body {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.titleSection b {
+.titleSection b, .secondaryTitleSection b {
   color: #8B5974;
   font-family: "semibold";
   font-size: 20px;
   transform: translateY(5px);
 }
-.titleSection p {
+.titleSection p, .secondaryTitleSection p {
   font-size: 40px;
   font-family: "bold";
 }
-.titleSection .circles {
+.titleSection .circles, .secondaryTitleSection .circles {
   display: flex;
   align-items: center;
   margin: 5px;
 }
-.titleSection .circles span {
+.titleSection .circles span, .secondaryTitleSection .circles span {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -91,10 +91,26 @@ body {
   margin: 0px 3px;
   background-color: #8B5974;
 }
-.titleSection .circles .biggerCircle {
+.titleSection .circles .biggerCircle, .secondaryTitleSection .circles .biggerCircle {
   width: 13px;
   height: 13px;
   background-color: #884B6A;
+}
+
+.secondaryTitleSection {
+  margin-top: 0px;
+}
+.secondaryTitleSection b {
+  color: #F6DCBB;
+}
+.secondaryTitleSection p {
+  color: #FAFAFA;
+}
+.secondaryTitleSection .circles span {
+  background-color: #F6DCBB;
+}
+.secondaryTitleSection .circles .biggerCircle {
+  background-color: #FAFAFA;
 }
 
 .additionalQuestion {
@@ -597,7 +613,7 @@ footer .contact .fa-instagram {
   border: 8px solid #F6DCBB;
 }
 .landing .textContent {
-  border: 2px solid #F6DCBB;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -607,6 +623,56 @@ footer .contact .fa-instagram {
   max-width: 1250px;
   color: #FAFAFA;
   margin-bottom: 50px;
+}
+.landing .textContent .landingGraphics .leftBorder, .landing .textContent .landingGraphics .rightBorder {
+  position: absolute;
+  left: 0px;
+  height: 94%;
+  width: 2px;
+  top: 3%;
+  background-color: #F6DCBB;
+}
+.landing .textContent .landingGraphics .rightBorder {
+  right: 0px;
+  left: unset;
+}
+.landing .textContent .landingGraphics .topBorder, .landing .textContent .landingGraphics .bottomBorder {
+  position: absolute;
+  top: 0px;
+  left: 1%;
+  width: 98%;
+  height: 2px;
+  background-color: #F6DCBB;
+}
+.landing .textContent .landingGraphics .bottomBorder {
+  bottom: 0px;
+  top: unset;
+}
+.landing .textContent .landingGraphics .triangle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-top: 2px solid #F6DCBB;
+  border-left: 2px solid #F6DCBB;
+}
+.landing .textContent .landingGraphics .topLeft {
+  top: -10px;
+  left: -10px;
+}
+.landing .textContent .landingGraphics .topRight {
+  transform: rotate(90deg);
+  top: -10px;
+  right: -10px;
+}
+.landing .textContent .landingGraphics .bottomLeft {
+  transform: rotate(270deg);
+  bottom: -10px;
+  left: -10px;
+}
+.landing .textContent .landingGraphics .bottomRight {
+  transform: rotate(180deg);
+  bottom: -10px;
+  right: -10px;
 }
 .landing .textContent .title {
   font-size: 18px;
@@ -828,21 +894,6 @@ footer .contact .fa-instagram {
   background-image: url("../../images/aboutBackground.png");
   margin-top: 100px;
   background-size: cover;
-}
-.aboutSection .titleSection {
-  margin-top: 0px;
-}
-.aboutSection .titleSection b {
-  color: #F6DCBB;
-}
-.aboutSection .titleSection p {
-  color: #FAFAFA;
-}
-.aboutSection .titleSection .circles span {
-  background-color: #F6DCBB;
-}
-.aboutSection .titleSection .circles .biggerCircle {
-  background-color: #FAFAFA;
 }
 .aboutSection .aboutSectionContent p {
   text-align: center;
