@@ -19,24 +19,24 @@
                 height: 300px;
                 background-attachment: fixed;
                 background-size: cover;
-             
+                background-position: center center;
                 background-position: center /* Centers the image within the div */
            
             }
         
             .image1{
-                background-image: url("../../images/smallClock.png");
+                background-image: url("../../images/hourGlass.jpg");
             }
             .image2{
-                background-image: url("../../images/spareChange.png");
+                background-image: url("../../images/moneyCAD.jpg");
             }
             .image3{
-                background-image: url("../../images/clock.png");
+                background-image: url("../../images/hourGlass.jpg");
             }
         
             
             .whyReasonText{
-                background-color: $primaryColor;
+                background-color: $primaryDark;
                 color: $white;
                 display: flex;
                 flex-direction: column;
@@ -60,12 +60,13 @@
     .whySectionContent{
         .whyReason:nth-child(2){
             .whyReasonText{
-                background-color: $accentColorDark;
+                 background-color: $pink;
             }
         }
         .whyReason:nth-child(3){
             .whyReasonText{
-                background-color: $pink;
+               
+                background-color: $accentColorDark;
             }
         }
     }
