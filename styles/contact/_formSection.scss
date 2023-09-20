@@ -1,33 +1,140 @@
 .formSection{
     background-color: $primaryColor;
+    width: 100%;
     margin-top: 30px;
+    padding-bottom: 30px;
+    background-image: url("../../images/aboutBackground.png");
+    background-attachment: fixed;
+    .secondaryTitleSection{
+        margin-bottom: 10px;
+    }
 
-
-    .formContent{
-        form{
-
-        }
+    .contactContent{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
         .contactDetails{
+
+            max-width: 500px;
+            padding: 0px 2px;
+            .contactTitle{
+                color: $white;
+                font-family: "bold";
+                letter-spacing: 1px;
+                font-size: 30px; 
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                color: $white;
+                text-align: center;
+                
+           
+            }
+            a{
+                text-decoration: none;
+                color: $secondaryColor;
+                font-family: "semibold";
+            }
             .contactOptions{
                 .contactOption{
                     display: flex;
                     align-items: center;
-                    width: fit-content;
-                    b{
+                    max-width: 500px;
+                    margin: 20px 0px;
+                    margin-left: 5px;
+                    .contactNumber{
                         width: 50px !important;
+                        min-width: 50px;
                         height: 50px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         font-size: 30px;
-                        background-color: $accentColorDark;
-                        margin-right: 50px;
+                        background-color: $accentColor;
+                        margin-right: 10px;
                         border-radius: 10px;
                         color: $secondaryColor;
+                    }
+                    .contactOptionText{
+                        b{
+                            font-family: "semibold";
+                            color: $white;
+                            font-size: 16px;
+                        }
+                        p{
+                            color: $white;
+                            text-align: start;
+                            width: fit-content;
+                        }
                     }
                 }
             }
         }
+        form{
+            background-color: #f1f1f1;
+            background-color: $secondaryColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            width: 98%;
+            border-radius: 20px;
+            margin: 0px 5px;
+            padding-top: 15px;
+            label{
+                width: 90%;
+                text-align: start;
+            }
+            input{
+                width: 90%;
+                max-width: 800px;
+                box-shadow: 0px 0px 5px 0px #00000067;
+                border: none;
+                border-radius: 10px;
+                height: 40px;
+                margin: 5px 5px;
+                padding-left: 10px;
+                
+            }
+            input:focus{
+                outline: none;
+            }
+            textarea{
+                @extend input;
+                height: 150px;
+                resize: none;
+                padding-top: 5px;
+                
+            }
+            button{
+                margin: 10px 0px;
+                padding: 8px 12px;
+            }
+        }
+    
 
+    }
+}
+
+@media(min-width:1000px){
+    .formSection{
+        .contactContent{
+            .contactDetails{
+                margin-right: 30px;    
+                .contactTitle{
+                    justify-content: flex-start;
+                }
+                p{
+                    text-align: start;
+                }
+               
+            }
+        }
     }
 }

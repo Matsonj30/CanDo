@@ -106,36 +106,48 @@
   
     </div>
 
-    <div class="formContent">
-        <form>
+    <div class="contactContent">
 
-        </form>
         <div class="contactDetails">
-            <b class="contactTitle">Talk To A <span class=changeText>Bookkeeping Expert</span></b>
-            <p>Your time is invaluable! When reaching out to CanDo Bookkeeping, please provide us with detailed information to ensure we can provide an accurate answer.</p>
+            <b class="contactTitle">Get In Touch Today!</b>
+            <p>Your time is invaluable! If you are reaching out to CanDo Bookkeeping with the form, please provide us with detailed information to ensure we can provide an accurate response.</p>
             <div class="contactOptions">
                 <div class="contactOption">
-                    <b>1</b>
+                    <b class="contactNumber">1</b>
                     <div class="contactOptionText">
-                        <p>Call Us Today</p>
-                        <p>If you wish to message us indirectly, this is a great option+</p>
+                        <b>Call Us Today</b>
+                        <p>Reach out to us directly at <a href="tel:(403) 304-0212">(403) 304-0212.</a> We're here to assist you!</p>
                     </div>
                 </div>
                 <div class="contactOption">
-                    <b>2</b>
+                    <b class="contactNumber">2</b>
                     <div class="contactOptionText">
-                        <p>Call Us Today</p>
+                        <b>Send Us An E-mail</b>
+                        <p>Drop us an email at [email address] – we'd love to hear from you!"</p>
                     </div>
                 </div>
                 <div class="contactOption">
-                    <b>3</b>
+                    <b class="contactNumber">3</b>
                     <div class="contactOptionText">
-                        <p>Call Us Today</p>
+                        <b>Call Us Today</b>
+                        <p>Connect with us on <a href="https://www.facebook.com/CanDoBookkeepingServices">Facebook</a> today! Join our community.</p>
                     </div>
                 </div>
             </div>
         </div>
-
+        <form name="contact"  method="post" data-netlify="true" onSubmit="submit" class="indexForm">
+            <label for="name">Full Name</label>
+            <input class=details placeholder="Full Name" type="text" name="name" />
+            <label for="email">E-mail Address</label>
+            <input class=details placeholder="E-mail" type="email" name="email" />
+            <label for="phone">Phone Number</label>
+            <input class=details placeholder="Phone #" type="tel" name="phone" />
+            <label for="generalInfo">What Can We Help You With Today? </label>
+            <textarea id="generalInfo" name="generalInfo" placeholder="Additional details or a summary of the job you are looking for specifically..."></textarea>
+        
+            <button type="submit" class="primaryButton">Submit Form<img src="/images/rightArrow.png"></button>
+        </form>
+        
     </div>
 
 </div>

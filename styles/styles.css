@@ -256,7 +256,7 @@ body {
   top: 40px;
   right: 30px;
 }
-.hamburgerMenu input {
+.hamburgerMenu input, .hamburgerMenu .formSection .contactContent form textarea, .formSection .contactContent form .hamburgerMenu textarea {
   opacity: 50%;
   width: 70px;
   height: 60px;
@@ -282,14 +282,14 @@ body {
 .hamburgerMenu span:last-child {
   transform-origin: 0% 100%;
 }
-.hamburgerMenu input:checked ~ span {
+.hamburgerMenu input:checked ~ span, .hamburgerMenu .formSection .contactContent form textarea:checked ~ span, .formSection .contactContent form .hamburgerMenu textarea:checked ~ span {
   transform: rotate(45deg) translate(0px, 0px);
 }
-.hamburgerMenu input:checked ~ span:nth-child(3) {
+.hamburgerMenu input:checked ~ span:nth-child(3), .hamburgerMenu .formSection .contactContent form textarea:checked ~ span:nth-child(3), .formSection .contactContent form .hamburgerMenu textarea:checked ~ span:nth-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-.hamburgerMenu input:checked ~ span:nth-child(4) {
+.hamburgerMenu input:checked ~ span:nth-child(4), .hamburgerMenu .formSection .contactContent form textarea:checked ~ span:nth-child(4), .formSection .contactContent form .hamburgerMenu textarea:checked ~ span:nth-child(4) {
   transform: rotate(-45deg) translate(-5px, 4px);
 }
 
@@ -1192,23 +1192,124 @@ footer .contact .fa-instagram {
 
 .formSection {
   background-color: #8B5974;
+  width: 100%;
   margin-top: 30px;
+  padding-bottom: 30px;
+  background-image: url("../../images/aboutBackground.png");
+  background-attachment: fixed;
 }
-.formSection .formContent .contactDetails .contactOptions .contactOption {
+.formSection .secondaryTitleSection {
+  margin-bottom: 10px;
+}
+.formSection .contactContent {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.formSection .contactContent .contactDetails {
+  max-width: 500px;
+  padding: 0px 2px;
+}
+.formSection .contactContent .contactDetails .contactTitle {
+  color: #FAFAFA;
+  font-family: "bold";
+  letter-spacing: 1px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formSection .contactContent .contactDetails p {
+  color: #FAFAFA;
+  text-align: center;
+}
+.formSection .contactContent .contactDetails a {
+  text-decoration: none;
+  color: #F6DCBB;
+  font-family: "semibold";
+}
+.formSection .contactContent .contactDetails .contactOptions .contactOption {
   display: flex;
   align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 500px;
+  margin: 20px 0px;
+  margin-left: 5px;
 }
-.formSection .formContent .contactDetails .contactOptions .contactOption b {
+.formSection .contactContent .contactDetails .contactOptions .contactOption .contactNumber {
   width: 50px !important;
+  min-width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  background-color: #301E2E;
-  margin-right: 50px;
+  background-color: #692D50;
+  margin-right: 10px;
   border-radius: 10px;
   color: #F6DCBB;
+}
+.formSection .contactContent .contactDetails .contactOptions .contactOption .contactOptionText b {
+  font-family: "semibold";
+  color: #FAFAFA;
+  font-size: 16px;
+}
+.formSection .contactContent .contactDetails .contactOptions .contactOption .contactOptionText p {
+  color: #FAFAFA;
+  text-align: start;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.formSection .contactContent form {
+  background-color: #f1f1f1;
+  background-color: #F6DCBB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 98%;
+  border-radius: 20px;
+  margin: 0px 5px;
+  padding-top: 15px;
+}
+.formSection .contactContent form label {
+  width: 90%;
+  text-align: start;
+}
+.formSection .contactContent form input, .formSection .contactContent form textarea {
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4039215686);
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  margin: 5px 5px;
+  padding-left: 10px;
+}
+.formSection .contactContent form input:focus, .formSection .contactContent form textarea:focus {
+  outline: none;
+}
+.formSection .contactContent form textarea {
+  height: 150px;
+  resize: none;
+  padding-top: 5px;
+}
+.formSection .contactContent form button {
+  margin: 10px 0px;
+  padding: 8px 12px;
+}
+
+@media (min-width: 1000px) {
+  .formSection .contactContent .contactDetails {
+    margin-right: 30px;
+  }
+  .formSection .contactContent .contactDetails .contactTitle {
+    justify-content: flex-start;
+  }
+  .formSection .contactContent .contactDetails p {
+    text-align: start;
+  }
 }/*# sourceMappingURL=styles.css.map */
