@@ -202,10 +202,15 @@ body{
 //-------------------------------IMPORTS---------------------------------
 @import "_navigation.scss";
 @import "_footer.scss";
+@import "_newPageLanding.scss";
+
 
 @import "index/_testimonialSection.scss";
 @import "index/_landing.scss";
 @import "index/_servicesSection.scss";
 @import "index/_whyUsSection.scss";
 @import "index/_aboutSection.scss";
+
+@import "contact/_contactIntro.scss";
+@import "contact/_formSection.scss";
 //-------------------------------IMPORTS---------------------------------

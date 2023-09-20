@@ -314,7 +314,7 @@ body {
   }
   .navigationBar #menu {
     background-color: transparent;
-    transform: unset !important;
+    transform: translateX(20px);
     position: relative;
     width: -moz-fit-content;
     width: fit-content;
@@ -512,6 +512,273 @@ footer .contact .fa-instagram {
   opacity: 0.5;
 }
 
+.landing {
+  position: relative;
+  z-index: 1;
+  background-image: url("../../images/heroImage.png");
+  height: -moz-fit-content;
+  height: fit-content;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 8px solid #F6DCBB;
+}
+.landing .textContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+  margin-top: 100px;
+  min-height: 420px;
+  max-width: 1250px;
+  color: #FAFAFA;
+  margin-bottom: 50px;
+}
+.landing .textContent .landingGraphics .leftBorder, .landing .textContent .landingGraphics .rightBorder {
+  position: absolute;
+  left: 0px;
+  height: 94%;
+  width: 2px;
+  top: 3%;
+  background-color: #F6DCBB;
+}
+.landing .textContent .landingGraphics .rightBorder {
+  right: 0px;
+  left: unset;
+}
+.landing .textContent .landingGraphics .topBorder, .landing .textContent .landingGraphics .bottomBorder {
+  position: absolute;
+  top: 0px;
+  left: 1%;
+  width: 98%;
+  height: 2px;
+  background-color: #F6DCBB;
+}
+.landing .textContent .landingGraphics .bottomBorder {
+  bottom: 0px;
+  top: unset;
+}
+.landing .textContent .landingGraphics .triangle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-top: 2px solid #F6DCBB;
+  border-left: 2px solid #F6DCBB;
+}
+.landing .textContent .landingGraphics .topLeft {
+  top: -10px;
+  left: -10px;
+}
+.landing .textContent .landingGraphics .topRight {
+  transform: rotate(90deg);
+  top: -10px;
+  right: -10px;
+}
+.landing .textContent .landingGraphics .bottomLeft {
+  transform: rotate(270deg);
+  bottom: -10px;
+  left: -10px;
+}
+.landing .textContent .landingGraphics .bottomRight {
+  transform: rotate(180deg);
+  bottom: -10px;
+  right: -10px;
+}
+.landing .textContent .title {
+  font-size: 18px;
+  padding: 10px 0px;
+  text-align: center;
+  font-family: "semibold";
+  transform: translateY(10px);
+}
+.landing .textContent .slogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 55px;
+}
+.landing .textContent .slogan b {
+  font-size: 50px;
+  text-align: center;
+}
+.landing .textContent .line {
+  display: inline-block;
+  width: 90%;
+  height: 2px;
+  background-color: #F6DCBB;
+  margin: 15px 0px;
+  margin-top: 25px;
+}
+.landing .textContent .supportingDetails {
+  text-align: center;
+  padding: 10px 5px;
+  max-width: 600px;
+}
+.landing .textContent .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.landing .textContent .buttons button {
+  font-size: 20px;
+  margin: 10px 10px;
+}
+
+@media (min-width: 850px) {
+  .landing .textContent {
+    margin-top: 150px;
+  }
+  .landing .textContent .title {
+    font-size: 22px;
+    transform: translateY(15px);
+  }
+  .landing .textContent .slogan {
+    line-height: 100px;
+  }
+  .landing .textContent .slogan b {
+    font-size: 90px;
+  }
+  .landing .textContent .supportingDetails {
+    font-size: 18px;
+  }
+}
+.newPageLanding {
+  position: relative;
+  background-image: url("../../images/heroImage.png");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+  border: 8px solid #F6DCBB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+.newPageLanding .textContent {
+  margin: 0px 20px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.newPageLanding .textContent .title {
+  font-family: "semibold";
+  color: #FAFAFA;
+  margin-top: 10px;
+}
+.newPageLanding .textContent .slogan {
+  padding: 0px 30px;
+  line-height: 55px;
+  text-align: center;
+}
+.newPageLanding .textContent .slogan b {
+  font-size: 50px;
+  color: #FAFAFA;
+}
+.newPageLanding .landingGraphics .leftBorder, .newPageLanding .landingGraphics .rightBorder, .newPageLanding .landing .textContent .landingGraphics .rightBorder, .landing .textContent .newPageLanding .landingGraphics .rightBorder {
+  position: absolute;
+  left: 0px;
+  height: 80%;
+  width: 2px;
+  top: 10%;
+  background-color: #F6DCBB;
+}
+.newPageLanding .landingGraphics .rightBorder {
+  right: 0px;
+  left: unset;
+}
+.newPageLanding .landingGraphics .topBorder, .newPageLanding .landingGraphics .bottomBorder, .newPageLanding .landing .textContent .landingGraphics .bottomBorder, .landing .textContent .newPageLanding .landingGraphics .bottomBorder {
+  position: absolute;
+  top: 0px;
+  left: 1%;
+  width: 98%;
+  height: 2px;
+  background-color: #F6DCBB;
+}
+.newPageLanding .landingGraphics .bottomBorder {
+  bottom: 0px;
+  top: unset;
+}
+.newPageLanding .landingGraphics .triangle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #F6DCBB;
+  border-left: 2px solid #F6DCBB;
+}
+.newPageLanding .landingGraphics .topLeft {
+  top: -5px;
+  left: -5px;
+}
+.newPageLanding .landingGraphics .topRight {
+  transform: rotate(90deg);
+  top: -5px;
+  right: -5px;
+}
+.newPageLanding .landingGraphics .bottomLeft {
+  transform: rotate(270deg);
+  bottom: -5px;
+  left: -5px;
+}
+.newPageLanding .landingGraphics .bottomRight {
+  transform: rotate(180deg);
+  bottom: -5px;
+  right: -5px;
+}
+
+@media (min-width: 1000px) {
+  .newPageLanding {
+    min-height: 400px;
+  }
+  .newPageLanding .textContent .title {
+    font-size: 22px;
+  }
+  .newPageLanding .textContent .slogan {
+    line-height: 100px;
+  }
+  .newPageLanding .textContent .slogan b {
+    font-size: 90px;
+  }
+  .newPageLanding .landingGraphics .leftBorder, .newPageLanding .landing .textContent .landingGraphics .rightBorder, .landing .textContent .newPageLanding .landingGraphics .rightBorder, .newPageLanding .landingGraphics .rightBorder {
+    height: 90%;
+    top: 5%;
+  }
+  .newPageLanding .landingGraphics .topBorder, .newPageLanding .landing .textContent .landingGraphics .bottomBorder, .landing .textContent .newPageLanding .landingGraphics .bottomBorder, .newPageLanding .landingGraphics .bottomBorder {
+    left: 2%;
+    width: 96%;
+  }
+  .newPageLanding .landingGraphics .triangle {
+    width: 45px;
+    height: 45px;
+  }
+  .newPageLanding .landingGraphics .topLeft {
+    top: -10px;
+    left: -10px;
+  }
+  .newPageLanding .landingGraphics .topRight {
+    top: -10px;
+    right: -10px;
+  }
+  .newPageLanding .landingGraphics .bottomLeft {
+    bottom: -10px;
+    left: -10px;
+  }
+  .newPageLanding .landingGraphics .bottomRight {
+    bottom: -10px;
+    right: -10px;
+  }
+}
 .testimonialSection {
   margin-top: 100px;
   background-color: #884B6A;
@@ -731,9 +998,6 @@ footer .contact .fa-instagram {
   .landing .textContent .slogan b {
     font-size: 90px;
   }
-  .landing .textContent .slogan #changingWord {
-    padding-bottom: 20px;
-  }
   .landing .textContent .supportingDetails {
     font-size: 18px;
   }
@@ -809,6 +1073,7 @@ footer .contact .fa-instagram {
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 18px;
+    padding: unset;
   }
 }
 .whySection {
@@ -910,4 +1175,40 @@ footer .contact .fa-instagram {
   .aboutSection .aboutSectionContent p {
     font-size: 18px;
   }
+}
+.contactIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactIntro .titleSection, .contactIntro .secondaryTitleSection {
+  margin-top: 30px;
+}
+.contactIntro p {
+  text-align: center;
+  max-width: 800px;
+  padding: 0px 5px;
+}
+
+.formSection {
+  background-color: #8B5974;
+  margin-top: 30px;
+}
+.formSection .formContent .contactDetails .contactOptions .contactOption {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.formSection .formContent .contactDetails .contactOptions .contactOption b {
+  width: 50px !important;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #301E2E;
+  margin-right: 50px;
+  border-radius: 10px;
+  color: #F6DCBB;
 }/*# sourceMappingURL=styles.css.map */

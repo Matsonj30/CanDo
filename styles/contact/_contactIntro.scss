@@ -1,0 +1,16 @@
+.contactIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titleSection{
+        margin-top: 30px;
+
+       
+    }
+    p{
+        text-align: center;
+        max-width: 800px;
+        padding: 0px 5px;
+    }
+}

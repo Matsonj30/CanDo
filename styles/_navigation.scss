@@ -180,8 +180,10 @@
             display: none;
         }
         #menu{
+            
             background-color: transparent;
-            transform: unset !important;
+         
+            transform: translateX(20px);
             position: relative;
             width: fit-content;
             align-items: center;
