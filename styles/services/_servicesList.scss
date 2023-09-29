@@ -1,10 +1,9 @@
 .servicesListContainer{
     .serviceSection{
-        .serviceSectionTitle{
-            width: 100%;
-            h3{
-                text-align: center;
-                margin-bottom: 20px;
+        padding: 50px 0px;
+        .titleSection{
+            p{
+                font-size: 30px;
             }
         }
         .serviceSectionContent{
@@ -18,8 +17,8 @@
                 list-style: none;
                 width: fit-content;
                 max-width: 500px;
-                transform: translateX(30px);
-                margin: 0px 50px;
+                transform: translateX(0px);
+                margin: 0px 0px;
                 li{
                     margin: 15px 0px;
                     width: fit-content;
@@ -41,4 +40,14 @@
 
 
 
+}
+
+@media(min-width:1000px){
+    .servicesListContainer{
+        .serviceSection{
+            .serviceSectionContent{
+
+            }
+        }
+    }
 }
