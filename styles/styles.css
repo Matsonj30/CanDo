@@ -1344,6 +1344,7 @@ footer .contact .fa-instagram {
   font-family: "semibold";
   font-size: 25px;
   margin-top: 5px;
+  text-align: center;
 }
 .servicesListContainer .serviceSection .serviceSectionContent {
   display: flex;
