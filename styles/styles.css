@@ -1182,7 +1182,7 @@ footer .contact .fa-instagram {
   align-items: center;
 }
 .contactIntro .titleSection, .contactIntro .secondaryTitleSection {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .contactIntro p {
   text-align: center;
@@ -1312,4 +1312,38 @@ footer .contact .fa-instagram {
   .formSection .contactContent .contactDetails p {
     text-align: start;
   }
+}
+.servicesListContainer .serviceSection .serviceSectionTitle {
+  width: 100%;
+}
+.servicesListContainer .serviceSection .serviceSectionTitle h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.servicesListContainer .serviceSection .serviceSectionContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.servicesListContainer .serviceSection .serviceSectionContent ul {
+  list-style: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 500px;
+  transform: translateX(30px);
+  margin: 0px 50px;
+}
+.servicesListContainer .serviceSection .serviceSectionContent ul li {
+  margin: 15px 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+.servicesListContainer .serviceSection .serviceSectionContent ul li .fa {
+  color: #8B5974;
+  font-size: 25px;
+  margin-right: 15px;
 }/*# sourceMappingURL=styles.css.map */
