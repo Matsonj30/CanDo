@@ -46,7 +46,10 @@
     .servicesListContainer{
         .serviceSection{
             .serviceSectionContent{
-
+                ul{
+                    margin: 0px 50px;
+                    transform: translateX(40px);
+                }
             }
         }
     }

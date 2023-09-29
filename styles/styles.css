@@ -1345,4 +1345,11 @@ footer .contact .fa-instagram {
   color: #8B5974;
   font-size: 25px;
   margin-right: 15px;
+}
+
+@media (min-width: 1000px) {
+  .servicesListContainer .serviceSection .serviceSectionContent ul {
+    margin: 0px 50px;
+    transform: translateX(40px);
+  }
 }/*# sourceMappingURL=styles.css.map */
