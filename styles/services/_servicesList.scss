@@ -1,5 +1,6 @@
 .servicesListContainer{
     margin-top: 25px;
+ 
     .serviceSection{
         margin-bottom: 50px;
         .serviceTitle{
@@ -8,6 +9,17 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 10px;
+            .numberImages{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 80px;
+                    transform: rotate(-45deg);
+                }
+                :nth-child(3){
+                    transform: rotate(45deg);
+                }
+            }
             span{
                 color: $secondaryColor;
                 background-color: $primaryColor;

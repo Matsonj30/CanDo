@@ -1326,6 +1326,17 @@ footer .contact .fa-instagram {
   align-items: center;
   margin-bottom: 10px;
 }
+.servicesListContainer .serviceSection .serviceTitle .numberImages {
+  display: flex;
+  align-items: center;
+}
+.servicesListContainer .serviceSection .serviceTitle .numberImages img {
+  height: 80px;
+  transform: rotate(-45deg);
+}
+.servicesListContainer .serviceSection .serviceTitle .numberImages :nth-child(3) {
+  transform: rotate(45deg);
+}
 .servicesListContainer .serviceSection .serviceTitle span {
   color: #F6DCBB;
   background-color: #8B5974;
