@@ -1313,11 +1313,37 @@ footer .contact .fa-instagram {
     text-align: start;
   }
 }
-.servicesListContainer .serviceSection {
-  padding: 50px 0px;
+.servicesListContainer {
+  margin-top: 25px;
 }
-.servicesListContainer .serviceSection .titleSection p, .servicesListContainer .serviceSection .secondaryTitleSection p {
-  font-size: 30px;
+.servicesListContainer .serviceSection {
+  margin-bottom: 50px;
+}
+.servicesListContainer .serviceSection .serviceTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.servicesListContainer .serviceSection .serviceTitle span {
+  color: #F6DCBB;
+  background-color: #8B5974;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.servicesListContainer .serviceSection .serviceTitle span p {
+  font-size: 35px;
+  font-family: "semibold";
+}
+.servicesListContainer .serviceSection .serviceTitle h3 {
+  font-family: "semibold";
+  font-size: 25px;
+  margin-top: 5px;
 }
 .servicesListContainer .serviceSection .serviceSectionContent {
   display: flex;
