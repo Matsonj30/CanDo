@@ -782,7 +782,6 @@ footer .contact .fa-instagram {
 }
 .testimonialSection {
   position: relative;
-  margin-top: 100px;
   background-color: #884B6A;
   width: 100%;
   display: flex;
@@ -1211,6 +1210,7 @@ footer .contact .fa-instagram {
   padding-top: 20px;
   background-size: cover;
   position: relative;
+  margin-top: 100px;
 }
 .aboutSection .aboutSectionContent p {
   text-align: center;
