@@ -34,6 +34,30 @@ body {
   justify-content: center;
 }
 
+::-moz-selection {
+  background-color: #F6DCBB; /* Set your desired highlight color */
+  color: #8B5974; /* Set the text color */
+}
+
+::selection {
+  background-color: #F6DCBB; /* Set your desired highlight color */
+  color: #8B5974; /* Set the text color */
+}
+
+::-webkit-scrollbar {
+  background-color: #AD6D90;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F6DCBB;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #884B6A;
+  height: 10px;
+}
+
 .primaryButton {
   background-color: #692D50;
   border: none;

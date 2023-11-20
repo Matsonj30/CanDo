@@ -59,6 +59,24 @@ body{
   display: flex;
   justify-content:  center;
 }
+::selection {
+  background-color: $secondaryColor; /* Set your desired highlight color */
+  color: $primaryColor; /* Set the text color */
+}
+::-webkit-scrollbar {
+  background-color: $primaryLight;
+  width: 10px;
+
+}
+::-webkit-scrollbar-track {
+  background-color: $secondaryColor;
+}
+::-webkit-scrollbar-thumb {
+
+  background-color: $primaryDark;
+
+  height: 10px;
+}
 .primaryButton{
    background-color: $accentColor;
    border: none;
