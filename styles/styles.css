@@ -65,7 +65,7 @@ body {
   align-items: center;
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .titleSection b, .secondaryTitleSection b {
@@ -117,10 +117,11 @@ body {
   display: none !important;
   background-color: #FAFAFA;
   border-radius: 10px;
-  transform: translateY(-53px);
   display: flex;
+  position: absolute;
   flex-direction: column;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.856);
+  top: -53px;
 }
 .additionalQuestion .topSection {
   display: flex;
@@ -780,23 +781,22 @@ footer .contact .fa-instagram {
   }
 }
 .testimonialSection {
+  position: relative;
   margin-top: 100px;
   background-color: #884B6A;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 50px;
-}
-.testimonialSection .titleSection, .testimonialSection .secondaryTitleSection {
-  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 .testimonialSection .testimonialContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 467px;
+  min-height: 491px;
 }
 .testimonialSection .testimonialContainer img {
   height: 60px;
@@ -814,7 +814,6 @@ footer .contact .fa-instagram {
   background-color: #884B6A;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4039215686);
   padding: 40px 40px;
-  margin: 10px 10px;
   text-align: center;
   transition: 0.5s;
 }
@@ -886,6 +885,8 @@ footer .contact .fa-instagram {
 @media (min-width: 550px) {
   .testimonialSection .titleSection, .testimonialSection .secondaryTitleSection {
     margin-top: unset;
+    padding-top: 60px;
+    margin-top: 10px;
   }
   .testimonialSection .testimonial {
     margin: 10px 30px;
@@ -894,6 +895,12 @@ footer .contact .fa-instagram {
 @media (min-width: 1300px) {
   .testimonialSection .titleSection, .testimonialSection .secondaryTitleSection {
     margin-top: unset;
+  }
+  .testimonialSection .testimonialContainer .testimonial .testimonialText p {
+    font-size: 18px;
+  }
+  .testimonialSection .testimonialContainer .testimonial .testimonialText b {
+    font-size: 18px;
   }
   .testimonialSection .testimonialContainer img {
     display: block;
@@ -1200,7 +1207,9 @@ footer .contact .fa-instagram {
   flex-direction: column;
   align-items: center;
   background-image: url("../../images/aboutBackground.png");
+  padding-top: 20px;
   background-size: cover;
+  position: relative;
 }
 .aboutSection .aboutSectionContent p {
   text-align: center;
@@ -1212,6 +1221,11 @@ footer .contact .fa-instagram {
   margin-bottom: 50px;
 }
 
+@media (min-width: 550px) {
+  .aboutSection {
+    padding-top: 80px;
+  }
+}
 @media (min-width: 1000px) {
   .aboutSection .aboutSectionContent p {
     font-size: 18px;
