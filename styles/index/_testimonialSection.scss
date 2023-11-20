@@ -37,7 +37,7 @@
         padding: 40px 40px;
         text-align: center;
         transition: 0.5s;
-
+        margin: 10px 0px;
         .testimonialText{
             border: 1px solid $secondaryColor;
             padding: 25px 5px;
@@ -140,6 +140,7 @@
         }
         .testimonialContainer{
             .testimonial{
+                
                 .testimonialText{
                     p{
                         font-size: 18px;
