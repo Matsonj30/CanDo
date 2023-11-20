@@ -505,7 +505,7 @@ footer .contact .fa-instagram {
 }
 .copyright .developer a {
   text-decoration: none;
-  font-family: "bold";
+  font-family: "semibold";
   color: #F6DCBB;
 }
 .copyright .developer a:hover {
@@ -788,16 +788,35 @@ footer .contact .fa-instagram {
   justify-content: center;
   padding-bottom: 50px;
 }
+.testimonialSection .titleSection, .testimonialSection .secondaryTitleSection {
+  margin-top: 30px;
+}
+.testimonialSection .testimonialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 467px;
+}
+.testimonialSection .testimonialContainer img {
+  height: 60px;
+  cursor: pointer;
+  display: none;
+}
+.testimonialSection .testimonialContainer .leftArrow {
+  transform: rotate(180deg);
+}
 .testimonialSection .testimonial {
   position: relative;
-  max-width: 350px;
+  max-width: 1000px;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #884B6A;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4039215686);
   padding: 40px 40px;
-  margin: 10px 0px;
+  margin: 10px 10px;
   text-align: center;
+  transition: 0.5s;
 }
 .testimonialSection .testimonial .testimonialText {
   border: 1px solid #F6DCBB;
@@ -808,11 +827,14 @@ footer .contact .fa-instagram {
 }
 .testimonialSection .testimonial p {
   color: #FAFAFA;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .testimonialSection .testimonial b {
   font-family: "semibold";
   color: #FAFAFA;
+}
+.testimonialSection .testimonial .test2 {
+  display: block !important;
 }
 .testimonialSection .testimonial .topLeftQuote {
   position: absolute;
@@ -861,9 +883,28 @@ footer .contact .fa-instagram {
   left: 25px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
+  .testimonialSection .titleSection, .testimonialSection .secondaryTitleSection {
+    margin-top: unset;
+  }
   .testimonialSection .testimonial {
     margin: 10px 30px;
+  }
+}
+@media (min-width: 1300px) {
+  .testimonialSection .titleSection, .testimonialSection .secondaryTitleSection {
+    margin-top: unset;
+  }
+  .testimonialSection .testimonialContainer img {
+    display: block;
+  }
+  .testimonialSection .test2 {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .testimonialSection .testimonialContainer img {
+    margin: 0px 30px;
   }
 }
 .landing {
