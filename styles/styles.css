@@ -192,7 +192,7 @@ body {
   transform: translateY(10px);
   padding-left: 30px;
   width: 106px;
-  height: auto;
+  height: 136px;
 }
 .navigationBar a, .navigationBar p {
   text-decoration: none;
@@ -238,7 +238,7 @@ body {
 }
 .navigationBar #menu img {
   height: 200px;
-  width: auto;
+  width: 200px;
   padding-left: 0px;
 }
 .navigationBar #menu ul {
@@ -330,6 +330,7 @@ body {
   }
   .navigationBar img {
     width: 150px;
+    height: 180px;
   }
   .navigationBar a button, .navigationBar p button {
     display: unset;
@@ -1088,8 +1089,8 @@ footer .contact .fa-instagram {
   margin-top: 30px;
 }
 .servicesSection .servicesContainer .service img {
-  width: 250px;
-  height: 250px;
+  width: 256px;
+  height: 256px;
 }
 .servicesSection .servicesContainer .service .serviceContent {
   display: flex;
