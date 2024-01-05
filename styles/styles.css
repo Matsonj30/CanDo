@@ -540,7 +540,7 @@ footer .contact .fa-instagram {
 .landing {
   position: relative;
   z-index: 1;
-  background-image: url("../../images/heroImage.png");
+  background-image: url("../../images/heroImage.webp");
   height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
@@ -675,7 +675,7 @@ footer .contact .fa-instagram {
 }
 .newPageLanding {
   position: relative;
-  background-image: url("../../images/heroImage.png");
+  background-image: url("../../images/heroImage.webp");
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -941,7 +941,7 @@ footer .contact .fa-instagram {
 .landing {
   position: relative;
   z-index: 1;
-  background-image: url("../../images/heroImage.png");
+  background-image: url("../../images/heroImage.webp");
   height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
@@ -1170,13 +1170,13 @@ footer .contact .fa-instagram {
   background-position: center;
 }
 .whySection .whySectionContent .whyReason .image1 {
-  background-image: url("../../images/hourGlass.jpg");
+  background-image: url("../../images/hourGlass.webp");
 }
 .whySection .whySectionContent .whyReason .image2 {
-  background-image: url("../../images/moneyCAD.jpg");
+  background-image: url("../../images/moneyCAD.webp");
 }
 .whySection .whySectionContent .whyReason .image3 {
-  background-image: url("../../images/hourGlass.jpg");
+  background-image: url("../../images/hourGlass.webp");
 }
 .whySection .whySectionContent .whyReason .whyReasonText {
   background-color: #884B6A;
@@ -1230,7 +1230,7 @@ footer .contact .fa-instagram {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../images/aboutBackground.png");
+  background-image: url("../../images/aboutBackground.webp");
   padding-top: 20px;
   background-size: cover;
   position: relative;
@@ -1275,7 +1275,7 @@ footer .contact .fa-instagram {
   width: 100%;
   margin-top: 30px;
   padding-bottom: 30px;
-  background-image: url("../../images/aboutBackground.png");
+  background-image: url("../../images/aboutBackground.webp");
   background-attachment: fixed;
 }
 .formSection .secondaryTitleSection {
