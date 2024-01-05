@@ -461,6 +461,7 @@ footer .logoAndDescription p {
 }
 footer .logoAndDescription img {
   width: 150px;
+  height: 150px;
 }
 footer .hours .fa {
   padding-right: 5px;
@@ -1198,7 +1199,7 @@ footer .contact .fa-instagram {
   max-width: 500px;
 }
 .whySection .whySectionContent .whyReason:nth-child(2) .whyReasonText {
-  background-color: #AD6D90;
+  background-color: #9e6383;
 }
 .whySection .whySectionContent .whyReason:nth-child(3) .whyReasonText {
   background-color: #301E2E;
