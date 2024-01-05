@@ -16,6 +16,11 @@
   src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
   font-display: swap;
 }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("path/to/fontawesome.woff2") format("woff2");
+  font-display: swap; /* or another appropriate value */
+}
 * {
   margin: 0;
   padding: 0;
