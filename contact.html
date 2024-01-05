@@ -25,18 +25,17 @@
         <ul>
             <li class="listLogo"><img src="/images/logo.webp" alt=companyLogo></li>
             <li><a  href="index.html" src="">Home</a></li>
-            <li><p  onclick="scrollToDiv('redFoxServices')" src="">Services</p></li>
-            <li><p  onclick="scrollToDiv('testimonialSection')" src="">Testimonials</p></li>
+            <li><a  href="services.html" src="">Services</a></li>
             <li><a  href="contact.html" src="">Contact</a></li>
         </ul>    
         <div class="navSocials">
             <p>Follow Us</p>
             <a alt="Visit our Facebook" href="https://www.facebook.com/CanDoBookkeepingServices/">  <div class="fa fa-facebook"></div></a>
         </div>
-       
+        
     </div>
-    <a alt="Call Us Today" href="tel:403-425-0765" ><button class="primaryButton"><div class="fa fa-phone"></div>&nbsp; (403) 325-0765</button></a>
-
+  
+    <a alt="Call Us Today" href="tel:403-425-0765" ><button class="primaryButton"><div class="fa fa-phone"></div>&nbsp; (403) 304-0212</button></a>
     <div class="hamburgerMenu">
         <input type="checkbox" id="hamburgerCheckbox" onclick="burgerMenu()" label="checkboxForMenu">
         <span></span>
@@ -122,14 +121,14 @@
                 <div class="contactOption">
                     <b class="contactNumber">2</b>
                     <div class="contactOptionText">
-                        <b>Send Us An E-mail</b>
-                        <p>Drop us an email at [email address] – we'd love to hear from you!"</p>
+                        <b>Fill Out Our Contact Form</b>
+                        <p>Using the contact form on the right, send us a message and will will get back to you soon!</p>
                     </div>
                 </div>
                 <div class="contactOption">
                     <b class="contactNumber">3</b>
                     <div class="contactOptionText">
-                        <b>Call Us Today</b>
+                        <b>Message Us On Social Media</b>
                         <p>Connect with us on <a href="https://www.facebook.com/CanDoBookkeepingServices">Facebook</a> today! Join our community.</p>
                     </div>
                 </div>
@@ -137,11 +136,11 @@
         </div>
         <form name="contact"  method="post" data-netlify="true" onSubmit="submit" class="indexForm">
             <label for="name">Full Name</label>
-            <input class=details placeholder="Full Name" type="text" name="name" />
+            <input class=details placeholder="Full Name" type="text" name="name" required/>
             <label for="email">E-mail Address</label>
-            <input class=details placeholder="E-mail" type="email" name="email" />
+            <input class=details placeholder="E-mail" type="email" name="email" required />
             <label for="phone">Phone Number</label>
-            <input class=details placeholder="Phone #" type="tel" name="phone" />
+            <input class=details placeholder="Phone #" type="tel" name="phone" required/>
             <label for="generalInfo">What Can We Help You With Today? </label>
             <textarea id="generalInfo" name="generalInfo" placeholder="Additional details or a summary of the job you are looking for specifically..."></textarea>
         
@@ -155,19 +154,20 @@
 
 <!-----------------------------------FOOTER--------------------------------------------->
 
+
 <footer>
 
     <div class="logoAndDescription section">
         <div class=footerLogo><img src="images/logo.webp" alt="companyLogo"></div>
-        <p>Red Fox Exteriors: Strathmore's leading outdoor specialists, offering roofing, siding, decks, demolition, and more.</p>
+        <p>
+            Cando Bookkeeping: Clive's QuickBooks expert for personalized financial solutions. Timely, transparent, and tailored to your needs.</p>
     </div>
 
     <div class="navigation section">
        <ul>
         <li><b>Navigation</b></li>
         <li><a href="index.html">Home</a></li>
-        <li><p  onclick="scrollToDiv('redFoxServices', 'home')" src="">Services</p></li>
-        <li><p  onclick="scrollToDiv('testimonialSection', 'home')" src="">Testimonials</p></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
        </ul>
     </div>
@@ -187,7 +187,7 @@
     <div class="contact section">
         <ul>
             <li><b>Contact Us</b></li>
-            <li><a href= "tel:403-325-0765"><div class="fa fa-phone"></div>403-325-0765</a></li>
+            <li><a href= "tel:403-304-0212"><div class="fa fa-phone"></div>(403) 304-0212</a></li>
             <li><a href="https://www.facebook.com/CanDoBookkeepingServices/"><div class="fa fa-facebook"></div>Facebook</a></li>
         </ul>
     </div>
@@ -196,7 +196,7 @@
         <div class=developer> 
             <p>Developed by&nbsp;</p><a href="https://kansasridgewebdesign.ca/">Kansas Ridge Web Design</a>
         </div>
-        <p>© 2023 CanDo Bookkeping</p>
+        <p>© 2024 CanDo Bookkeping</p>
     </div>
     
     
