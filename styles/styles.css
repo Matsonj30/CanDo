@@ -199,14 +199,23 @@ body {
   width: 106px;
   height: 136px;
 }
-.navigationBar a, .navigationBar p {
+.navigationBar p {
   text-decoration: none;
   cursor: pointer;
 }
-.navigationBar a button, .navigationBar p button {
-  display: none;
+.navigationBar a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.navigationBar a button {
   font-size: 20px;
-  font-family: "semibold";
+  display: none;
+}
+.navigationBar a img {
+  width: 32px !important;
+  height: 32px !important;
+  padding-left: 0px;
+  transform: translateY(0px);
 }
 .navigationBar .navSocials {
   width: 100%;
@@ -246,6 +255,10 @@ body {
   width: 200px;
   padding-left: 0px;
 }
+.navigationBar #menu .facebook {
+  height: 32px;
+  width: 32px;
+}
 .navigationBar #menu ul {
   padding-top: 0px;
   list-style: none;
@@ -275,11 +288,6 @@ body {
   color: #FAFAFA;
   letter-spacing: 2px;
 }
-.navigationBar a button .fa, .navigationBar p button .fa {
-  transform: translateY(4px);
-  font-size: 25px;
-}
-
 .hamburgerMenu {
   position: absolute;
   z-index: 7;
@@ -338,14 +346,15 @@ body {
     height: 180px;
   }
   .navigationBar a button, .navigationBar p button {
-    display: unset;
+    display: flex;
+    align-items: center;
   }
   .navigationBar .navSocials {
     display: none;
   }
   .navigationBar #menu {
     background-color: transparent;
-    transform: translateX(20px);
+    transform: translateX(20px) !important;
     position: relative;
     width: -moz-fit-content;
     width: fit-content;
@@ -435,9 +444,6 @@ footer .section ul li a {
   text-decoration: none;
   color: #FAFAFA;
 }
-footer .section ul li .fa {
-  color: #FAFAFA;
-}
 footer .section ul li:hover {
   opacity: 0.4;
   cursor: pointer;
@@ -468,10 +474,6 @@ footer .logoAndDescription img {
   width: 150px;
   height: 150px;
 }
-footer .hours .fa {
-  padding-right: 5px;
-  font-size: 18px;
-}
 footer .hours ul li {
   width: -moz-fit-content;
   width: fit-content;
@@ -480,14 +482,15 @@ footer .hours ul li b {
   display: inline-block;
   width: 50px;
 }
-footer .contact .fa {
-  width: 20px;
-  height: 20px;
-  text-align: center;
+footer .contact img {
+  width: 18px;
+  height: 18px;
+  transform: translateY(1px);
+  margin-right: 1px;
 }
-footer .contact .fa-instagram {
-  padding-top: 3px;
-  padding-right: 2px;
+footer .contact .phoneIcon {
+  width: 16px;
+  height: 16px;
 }
 
 @media (min-width: 800px) {
@@ -658,7 +661,7 @@ footer .contact .fa-instagram {
   margin-bottom: 30px;
 }
 .landing .textContent .buttons button {
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px 10px;
 }
 
@@ -678,6 +681,9 @@ footer .contact .fa-instagram {
   }
   .landing .textContent .supportingDetails {
     font-size: 18px;
+  }
+  .landing .textContent .buttons button {
+    font-size: 20px;
   }
 }
 .newPageLanding {
@@ -1059,7 +1065,7 @@ footer .contact .fa-instagram {
   margin-bottom: 30px;
 }
 .landing .textContent .buttons button {
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px 10px;
 }
 
@@ -1079,6 +1085,9 @@ footer .contact .fa-instagram {
   }
   .landing .textContent .supportingDetails {
     font-size: 18px;
+  }
+  .landing .textContent .buttons button {
+    font-size: 20px;
   }
 }
 .servicesSection .servicesContainer {
@@ -1465,11 +1474,13 @@ footer .contact .fa-instagram {
   padding: 0px 10px;
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
-.servicesListContainer .serviceSection .serviceSectionContent ul li .fa {
-  color: #8B5974;
-  font-size: 25px;
-  margin-right: 15px;
+.servicesListContainer .serviceSection .serviceSectionContent ul li img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  transform: translateY(2px);
 }
 
 @media (min-width: 1000px) {

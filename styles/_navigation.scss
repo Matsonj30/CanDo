@@ -13,15 +13,24 @@
             height: 136px;
    
         }
-        a, p{
+        p{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a{
             text-decoration: none;
             cursor: pointer;
             button{
-                display: none;
                 font-size: 20px;
-                font-family: "semibold";
-                
+                display: none;
             }
+            img{
+                width: 32px !important;
+                height: 32px !important;
+                padding-left: 0px;
+                transform: translateY(0px);
+            }
+            
         }
 
         .navSocials{
@@ -41,6 +50,7 @@
                 font-size: 28px;
                 color: $white;
             }
+        
         }
    
         #menu{
@@ -62,6 +72,10 @@
                 width: 200px;
                 padding-left: 0px;
              
+            }
+            .facebook{
+                height: 32px;
+                width: 32px;
             }
             ul{
                 padding-top: 0px;
@@ -101,12 +115,7 @@
             }
         }
         a, p{
-            button{
-                .fa{
-                    transform: translateY(4px);
-                    font-size: 25px;
-                }
-            }
+           
         }
     }
     .hamburgerMenu{
@@ -173,7 +182,8 @@
         }
         a, p{
             button{
-                display: unset;
+                display: flex;
+                align-items: center;
             }
         }
         .navSocials{
@@ -183,7 +193,7 @@
             
             background-color: transparent;
          
-            transform: translateX(20px);
+            transform: translateX(20px) !important;
             position: relative;
             width: fit-content;
             align-items: center;

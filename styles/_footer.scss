@@ -34,9 +34,7 @@ footer{
                     color: $white;
          
                 }
-                .fa{
-                    color: $white;
-                }
+               
             }
             li:hover{
                 opacity: 0.4;
@@ -76,10 +74,7 @@ footer{
         }
     }
     .hours{
-        .fa{
-            padding-right: 5px;
-            font-size: 18px;
-        }
+       
         ul{
            
             li{
@@ -95,15 +90,19 @@ footer{
     }
     .contact{
        
-        .fa{
-            width:20px;
-            height: 20px;
-              text-align: center;
+       
+        img{
+            width: 18px;
+            height: 18px;
+            transform: translateY(1px);
+            margin-right: 1px;
         }
-        .fa-instagram{
-            padding-top: 3px;
-            padding-right: 2px;
+        .phoneIcon{
+            width: 16px;
+            height: 16px;
+          
         }
+     
     }
 }
 
